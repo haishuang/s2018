@@ -78,9 +78,7 @@ public class MainActivity extends BaseActivity {
         menus.add("简单功能集成");
         menus.add("测试");
         menus.add("测试");
-        menus.add("测试");
-        menus.add("测试");
-        menus.add("测试");
+
     }
 
     @Override
