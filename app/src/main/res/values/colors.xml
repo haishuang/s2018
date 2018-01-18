@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="windowBackground">@color/color_background</color>
+
+    <!-- 主颜色-->
+    <color name="colorApp">#ffc047</color>
+    <!-- 辅助颜色-->
+    <color name="colorAppSub">#f9df35</color>
+    <!-- 分割线颜色-->
+    <color name="color_divider">#dddddd</color>
+    <!-- 分割线颜色-->
+    <color name="color_divider_black">#bebebe</color>
+    <!-- 默认背景色-->
+    <color name="color_background">#f5f5f5</color>
+    <!-- 底色1-->
+    <color name="color_base_black">#2b2a30</color>
+    <!-- 底色2-->
+    <color name="color_base_white">#ffffff</color>
+
+    <color name="color_font_bebebe">#bebebe</color>
+    <!--字体灰色-->
+    <color name="color_font_grey">#999999</color>
+    <color name="color_font_black">#333333</color>
+    <color name="color_font_666666">#666666</color>
+    <color name="color_font_warning_red">#e60012</color>
+    <color name="color_font_score_red">#ef0000</color>
+    <!-- 按钮背景灰色-->
+    <color name="color_et_text_hint">#D1D1D5</color>
+
+
+    <!--一些常规的颜色值-->
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_green">#00ff00</color>
+    <color name="color_blue">#0000ff</color>
+    <color name="color_yellow">#ffff00</color>
+    <color name="color_purple">#ff00ff</color>
+    <color name="color_cyan">#00ffff</color>
+    <color name="color_gray">#c0c0c0</color>
+
+    <color name="color_dialog_background">#dd2b2a30</color>
+
+    <color name="transparent">#00ffffff</color>
+
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_ripple_checked">@color/colorApp</color>
+
+    <color name="ksw_md_solid_shadow">#33000000</color>
+
+    <color name="ksw_md_solid_normal">#B6B6B6</color>
+    <color name="ksw_md_solid_checked">@color/colorApp</color>
+    <color name="ksw_md_solid_disable">#B6B6B6</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+
+
+    <!-- 透明 -->
+    <color name="transparency">#00000000</color>
+</resources>
