@@ -1,1 +1,1 @@
-include ':app', ':baseapp', ':libraryview'
+include ':app', ':baseapp', ':libraryview', ':photoview'
