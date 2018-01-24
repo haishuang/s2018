@@ -24,7 +24,8 @@
         </activity>
         <activity android:name=".simple.SimpleActivity" />
         <activity android:name=".web.WebLoadActivity" />
-        <activity android:name=".web.ViewPagerActivity"></activity>
+        <activity android:name=".web.ViewPagerActivity" />
+        <activity android:name=".mine.LoginActivity"></activity>
     </application>
 
 </manifest>
