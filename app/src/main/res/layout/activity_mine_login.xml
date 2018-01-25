@@ -1,9 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_mine_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="example.hais.s2018.mine.LoginActivity">
 
+    <TextView
+        android:id="@+id/tv_login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="@string/welcome"
+        android:textColor="@color/color_font_black"
+        android:textSize="48dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login_title"
+        app:passwordToggleTint="@color/color_blue"
+        app:counterEnabled="true"
+        app:counterMaxLength="80"
+        android:layout_marginTop="28dp">
+
+        <EditText
+            android:id="@+id/et_login_account"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/text_login_account"
+
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/til_account"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="12dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/text_login_pwd"
+            android:inputType="textPassword"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/til_password"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:text="登录"
+        style="@style/tv_login_submit"
+        android:enabled="false"
+        android:textSize="16sp" />
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
 </RelativeLayout>

@@ -19,6 +19,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import example.hais.s2018.base.BaseActivity;
 import example.hais.s2018.base.BaseRecyclerViewAdapter;
+import example.hais.s2018.mine.LoginActivity;
 import example.hais.s2018.simple.SimpleActivity;
 import example.hais.s2018.web.WebLoadActivity;
 
@@ -78,7 +79,7 @@ public class MainActivity extends BaseActivity {
     private void getData() {
         menus.add("简单功能集成");
         menus.add("web加载");
-        menus.add("测试");
+        menus.add("登录");
 
     }
 
@@ -94,6 +95,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 1:
                         showActivity(WebLoadActivity.class);
+                        break;
+                    case 2:
+                        showActivity(LoginActivity.class);
                         break;
                     default:
                         break;
