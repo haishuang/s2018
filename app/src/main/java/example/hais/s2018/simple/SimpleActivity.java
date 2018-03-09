@@ -8,6 +8,9 @@ import android.graphics.drawable.Drawable;
 import android.os.BatteryManager;
 import android.os.Bundle;
 import android.view.WindowManager;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.RadioButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +20,7 @@ import butterknife.ButterKnife;
 import example.hais.s2018.R;
 import example.hais.s2018.base.BaseActivity;
 import example.hais.s2018.utils.LogUtils;
+import example.hais.s2018.utils.SharedPrefUtil;
 
 public class SimpleActivity extends BaseActivity {
 
@@ -28,18 +32,25 @@ public class SimpleActivity extends BaseActivity {
     TextView tvBatteryInfo;
     @Bind(R.id.seekBar)
     SeekBar seekBar;
+    @Bind(R.id.rb_keep_on)
+    CheckBox cbKeepOn;
 
     private BatteryChangedReceiver batteryChangedReceiver;
     WindowManager.LayoutParams lp;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (SharedPrefUtil.get(this, "keepOn", false)) {
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        }
         setContentView(R.layout.activity_simple);
         ButterKnife.bind(this);
         seekBar.setMax(100);
         lp = getWindow().getAttributes();
         //LogUtils.e("--------------------" + lp.screenBrightness);
-        seekBar.setProgress((int)(lp.screenBrightness*100));
+        seekBar.setProgress((int) (lp.screenBrightness * 100));
+            cbKeepOn.setChecked(SharedPrefUtil.get(this, "keepOn", false));
         initView();
     }
 
@@ -69,6 +80,18 @@ public class SimpleActivity extends BaseActivity {
 
             }
         });
+        cbKeepOn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                SharedPrefUtil.put(activity, "keepOn", isChecked);
+                Intent intent = getIntent();
+                overridePendingTransition(0, 0);
+                finish();
+                overridePendingTransition(0, 0);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override

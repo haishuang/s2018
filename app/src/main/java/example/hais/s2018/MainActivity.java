@@ -20,6 +20,7 @@ import butterknife.ButterKnife;
 import example.hais.s2018.base.BaseActivity;
 import example.hais.s2018.base.BaseRecyclerViewAdapter;
 import example.hais.s2018.mine.LoginActivity;
+import example.hais.s2018.permission.PermissionActivity;
 import example.hais.s2018.simple.SimpleActivity;
 import example.hais.s2018.web.WebLoadActivity;
 
@@ -80,6 +81,7 @@ public class MainActivity extends BaseActivity {
         menus.add("简单功能集成");
         menus.add("web加载");
         menus.add("登录");
+        menus.add("权限");
 
     }
 
@@ -98,6 +100,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 2:
                         showActivity(LoginActivity.class);
+                        break;
+                    case 3:
+                        showActivity(PermissionActivity.class);
                         break;
                     default:
                         break;
