@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="F:\ahuanghs\wspace\androidstudio\a_2018\s2018\photoview\src\main\assets"/><source path="F:\ahuanghs\wspace\androidstudio\a_2018\s2018\photoview\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="F:\ahuanghs\wspace\androidstudio\a_2018\s2018\photoview\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="F:\ahuanghs\wspace\demo\s2018\photoview\src\main\assets"/><source path="F:\ahuanghs\wspace\demo\s2018\photoview\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="F:\ahuanghs\wspace\demo\s2018\photoview\src\debug\assets"/></dataSet></merger>
