@@ -82,6 +82,7 @@ public class MainActivity extends BaseActivity {
         menus.add("web加载");
         menus.add("登录");
         menus.add("权限");
+        menus.add("手机应用");
 
     }
 

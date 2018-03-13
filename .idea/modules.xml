@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/photoview/photoview.iml" filepath="$PROJECT_DIR$/photoview/photoview.iml" />
       <module fileurl="file://$PROJECT_DIR$/s2018.iml" filepath="$PROJECT_DIR$/s2018.iml" />
       <module fileurl="file://$PROJECT_DIR$/s2018.iml" filepath="$PROJECT_DIR$/s2018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" />
     </modules>
   </component>
 </project>
