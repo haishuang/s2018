@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_simple_app_info"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="example.hais.s2018.simple.AppInfoActivity">
+     >
 
     <TextView
         android:id="@+id/appinfo_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#888899"
+        android:textSize="16sp"
+        android:text="应用名称"
         android:gravity="center"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp"
-        android:text="App应用信息列表"
-        android:textSize="16sp" />
-
-    <com.hs.lib.xrecyclerview.XRecyclerView
-        android:id="@+id/xrv"
+        android:background="#888899"
+        android:padding="8dp"
+        />
+    <TextView
+        android:id="@+id/appinfo_package"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/appinfo_text" />
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="包名"
+        android:layout_below="@+id/appinfo_text"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:padding="8dp"
 
+        />
 </RelativeLayout>

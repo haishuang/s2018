@@ -21,6 +21,7 @@ import example.hais.s2018.base.BaseActivity;
 import example.hais.s2018.base.BaseRecyclerViewAdapter;
 import example.hais.s2018.mine.LoginActivity;
 import example.hais.s2018.permission.PermissionActivity;
+import example.hais.s2018.simple.AppInfoActivity;
 import example.hais.s2018.simple.SimpleActivity;
 import example.hais.s2018.web.WebLoadActivity;
 
@@ -104,6 +105,9 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 3:
                         showActivity(PermissionActivity.class);
+                        break;
+                    case 4:
+                        showActivity(AppInfoActivity.class);
                         break;
                     default:
                         break;

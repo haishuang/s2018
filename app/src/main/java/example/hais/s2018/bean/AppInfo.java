@@ -11,6 +11,16 @@ public class AppInfo {
     String packageName;
     Drawable drawable;
 
+    public AppInfo(String appName, String packageName, Drawable drawable) {
+        this.appName = appName;
+        this.packageName = packageName;
+        this.drawable = drawable;
+    }
+
+    public AppInfo() {
+
+    }
+
     public String getAppName() {
         return appName;
     }
