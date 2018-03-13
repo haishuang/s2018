@@ -1,1 +1,1 @@
-include ':app', ':baseapp', ':libraryview', ':photoview', ':xrecyclerview'
+include ':app', ':baseapp', ':libraryview', ':photoview', ':xrecyclerview', ':matisse'
