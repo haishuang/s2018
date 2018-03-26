@@ -2,11 +2,13 @@ package example.hais.s2018;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +24,7 @@ import example.hais.s2018.base.BaseRecyclerViewAdapter;
 import example.hais.s2018.mine.LoginActivity;
 import example.hais.s2018.permission.PermissionActivity;
 import example.hais.s2018.simple.AppInfoActivity;
+import example.hais.s2018.simple.ShareActivity;
 import example.hais.s2018.simple.SimpleActivity;
 import example.hais.s2018.web.WebLoadActivity;
 
@@ -46,6 +49,8 @@ public class MainActivity extends BaseActivity {
         rcv.setLayoutManager(new GridLayoutManager(this, 2));
         rcv.setAdapter(mainAdapter = new MainAdapter());
         rcv.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.HORIZONTAL));
+
+
     }
 
     class MainAdapter extends BaseRecyclerViewAdapter<MainAdapter.MyViewHolder> {
@@ -84,12 +89,14 @@ public class MainActivity extends BaseActivity {
         menus.add("登录");
         menus.add("权限");
         menus.add("手机应用");
+        menus.add("分享");
 
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        gets();
         mainAdapter.setOnItemClickListener(new BaseRecyclerViewAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
@@ -109,10 +116,30 @@ public class MainActivity extends BaseActivity {
                     case 4:
                         showActivity(AppInfoActivity.class);
                         break;
+                    case 5:
+                        showActivity(ShareActivity.class);
+                        break;
                     default:
                         break;
                 }
             }
         });
+    }
+
+    void  gets(){
+//        try {
+//            int i = Integer.parseInt("w");
+//            return;
+//        }catch (NumberFormatException e){
+//            Log.e("TAG","ss1");
+//            return;
+//        }catch (Exception e){
+//            Log.e("TAG","ss2");
+//            return;
+//        }finally {
+//            Log.e("TAG","ss3");
+//            return;
+//        }
+
     }
 }

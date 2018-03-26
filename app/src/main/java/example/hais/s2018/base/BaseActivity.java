@@ -8,7 +8,10 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 
+import butterknife.Bind;
+import example.hais.s2018.R;
 import example.hais.s2018.simple.SimpleActivity;
 import example.hais.s2018.utils.ToastUtils;
 
@@ -18,7 +21,6 @@ import example.hais.s2018.utils.ToastUtils;
 
 public class BaseActivity extends AppCompatActivity {
     protected Activity activity;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

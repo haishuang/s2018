@@ -7,7 +7,6 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
     <!-- SDCard中创建与删除文件权限 -->
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
@@ -19,7 +18,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"></activity>
         <activity
             android:name=".base.Main2Activity"
             android:theme="@style/AppTheme" />
@@ -35,7 +34,85 @@
         <activity android:name=".web.ViewPagerActivity" />
         <activity android:name=".mine.LoginActivity" />
         <activity android:name=".permission.PermissionActivity" />
-        <activity android:name=".simple.AppInfoActivity"></activity>
+        <activity android:name=".simple.AppInfoActivity" />
+        <activity android:name=".simple.ShareActivity">
+
+            <!-- 图片分享 -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <data android:mimeType="image/*" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/msword" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- <data android:mimeType="*/*" /> -->
+                <data android:mimeType="image/*" />
+            </intent-filter>
+
+
+            <!--*****************************************接受打开方式**************************************************************-->
+            <!--TXT-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:mimeType="text/plain"></data>
+            </intent-filter>
+            <!--Html-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:mimeType="text/html"></data>
+            </intent-filter>
+            <!--多种图片格式-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:mimeType="image/*"></data>
+            </intent-filter>
+            <!--PDF-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:mimeType="application/pdf"></data>
+            </intent-filter>
+            <!--WORD-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:mimeType="application/msword"></data>
+            </intent-filter>
+
+            <!--WORD-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:mimeType="application/vnd.ms-excel"></data>
+            </intent-filter>  <!--WORD-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data android:mimeType="application/*"></data>
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name=".file.FileActivity"></activity>
     </application>
 
 </manifest>
