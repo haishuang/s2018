@@ -113,6 +113,9 @@
 
         </activity>
         <activity android:name=".file.FileActivity"></activity>
+
+        <activity android:name=".rich.RichActivity" />
+        <activity android:name=".rich.Rich2Activity"></activity>
     </application>
 
 </manifest>

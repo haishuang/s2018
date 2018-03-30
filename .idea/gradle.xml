@@ -11,8 +11,10 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/baseapp" />
             <option value="$PROJECT_DIR$/libraryview" />
+            <option value="$PROJECT_DIR$/lubottommenu" />
             <option value="$PROJECT_DIR$/matisse" />
             <option value="$PROJECT_DIR$/photoview" />
+            <option value="$PROJECT_DIR$/richtexteditorlib" />
             <option value="$PROJECT_DIR$/xrecyclerview" />
           </set>
         </option>

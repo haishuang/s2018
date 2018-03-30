@@ -2,13 +2,11 @@ package example.hais.s2018;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +21,8 @@ import example.hais.s2018.base.BaseActivity;
 import example.hais.s2018.base.BaseRecyclerViewAdapter;
 import example.hais.s2018.mine.LoginActivity;
 import example.hais.s2018.permission.PermissionActivity;
+import example.hais.s2018.rich.Rich2Activity;
+import example.hais.s2018.rich.RichActivity;
 import example.hais.s2018.simple.AppInfoActivity;
 import example.hais.s2018.simple.ShareActivity;
 import example.hais.s2018.simple.SimpleActivity;
@@ -90,6 +90,8 @@ public class MainActivity extends BaseActivity {
         menus.add("权限");
         menus.add("手机应用");
         menus.add("分享");
+        menus.add("富文本");
+        menus.add("富文本2");
 
     }
 
@@ -118,6 +120,14 @@ public class MainActivity extends BaseActivity {
                         break;
                     case 5:
                         showActivity(ShareActivity.class);
+                        break;
+                    case 6:
+                        //https://github.com/nowandfurure/richeditor
+                        showActivity(RichActivity.class);
+                        break;
+                    case 7:
+                        // https://github.com/wasabeef/richeditor-android
+                        showActivity(Rich2Activity.class);
                         break;
                     default:
                         break;

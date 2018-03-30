@@ -1,1 +1,1 @@
-include ':app', ':baseapp', ':libraryview', ':photoview', ':xrecyclerview', ':matisse'
+include ':app', ':baseapp', ':libraryview', ':photoview', ':xrecyclerview', ':matisse', ':richtexteditorlib', ':lubottommenu'

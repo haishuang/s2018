@@ -5,8 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/baseapp/baseapp.iml" filepath="$PROJECT_DIR$/baseapp/baseapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraryview/libraryview.iml" filepath="$PROJECT_DIR$/libraryview/libraryview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lubottommenu/lubottommenu.iml" filepath="$PROJECT_DIR$/lubottommenu/lubottommenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/matisse/matisse.iml" filepath="$PROJECT_DIR$/matisse/matisse.iml" />
       <module fileurl="file://$PROJECT_DIR$/photoview/photoview.iml" filepath="$PROJECT_DIR$/photoview/photoview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/richtexteditorlib/richtexteditorlib.iml" filepath="$PROJECT_DIR$/richtexteditorlib/richtexteditorlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/s2018.iml" filepath="$PROJECT_DIR$/s2018.iml" />
       <module fileurl="file://$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" />
     </modules>
